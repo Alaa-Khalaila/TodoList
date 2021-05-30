@@ -1,0 +1,126 @@
+:root {
+  --color-primary: #489cc1;
+  --color-heading: #565657;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/** Buttons **/
+
+.btn {
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: var(--color-primary);
+  outline: 0;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  border: 0;
+  margin: 0 0.5rem;
+}
+
+.btn--larg {
+  padding: 1rem 1.5rem;
+}
+
+.btn--small {
+  padding: 0.5rem 1rem;
+}
+
+/** Inputs **/
+
+.input {
+  border: 2px solid #cdb87a;
+  outline: 0;
+  border-radius: 0.4rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+/** Icons **/
+
+.icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+/** Todo **/
+
+.todo {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+}
+
+.todo__content {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+/** app **/
+
+.app {
+  background-color: #fff;
+  margin: 10rem 20rem;
+  padding: 2rem 5rem;
+}
+
+.add_todo {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.completed__num {
+  font-size: 1.5rem;
+  background-color: rgb(184, 93, 108);
+  align-self: center;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/** Header **/
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__heading {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: var(--color-heading);
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    margin: 0;
+  }
+}
